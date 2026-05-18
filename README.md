@@ -47,6 +47,15 @@ Jalankan demo scheduler:
 python3 app.py
 ```
 
+Contoh output yang akan muncul:
+
+```text
+INFO | scheduler | Scheduler checked tasks | current_time=12:00 | due_tasks=3
+INFO | executor | Task completed | user=alice | message=Sync completed for /data/x
+INFO | executor | Task completed | user=bob | message=Backup completed for /srv/y
+INFO | scheduler | Scheduler finished | current_time=12:00 | success=3 | total=3
+```
+
 Secara default, `app.py` menjalankan simulasi untuk waktu `12:00`:
 
 ```python
